@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecnologia na Agricultura</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#fatos">Fatos</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Tecnologia na Agricultura</h1>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>
+      Descubra como inovações como IoT, drones, sensores e big data estão transformando
+      o campo em ambientes de alta produtividade e sustentabilidade.
+    </p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" style="background-image:url('../assets/drone.jpg');"></div>
+        <div class="slide" style="background-image:url('../assets/iot.jpg');"></div>
+        <div class="slide" style="background-image:url('../assets/trator.jpg');"></div>
+      </div>
+      <div class="controls">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="fatos">
+    <h2>Fatos Interessantes</h2>
+    <div class="filter">
+      <label for="categoria">Filtrar por categoria:</label>
+      <select id="categoria">
+        <option value="all">Todas</option>
+        <option value="iot">IoT</option>
+        <option value="drones">Drones</option>
+        <option value="gis">GIS</option>
+      </select>
+    </div>
+    <div class="grid cards">
+      <div class="card" data-cat="iot">
+        <img src="../assets/sensor.jpg" alt="Sensor">
+        <div class="card-content">
+          <h3>Internet das Coisas</h3>
+          <p>Sensores conectados monitoram umidade, pH e nutrientes do solo em tempo real.</p>
+        </div>
+      </div>
+      <div class="card" data-cat="drones">
+        <img src="../assets/drone-flight.jpg" alt="Drone">
+        <div class="card-content">
+          <h3>Drones Agrícolas</h3>
+          <p>Mapeamento aéreo para identificar áreas de estresse hídrico e pragas.</p>
+        </div>
+      </div>
+      <div class="card" data-cat="gis">
+        <img src="../assets/gps-tractor.jpg" alt="Trator com GPS">
+        <div class="card-content">
+          <h3>Sistemas GIS</h3>
+          <p>Planejamento de plantio e colheita otimizado via GPS de alta precisão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AgriTech Brasil. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
